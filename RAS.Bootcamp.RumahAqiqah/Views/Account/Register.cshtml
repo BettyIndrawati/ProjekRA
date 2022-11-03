@@ -1,0 +1,107 @@
+@model RAS.Bootcamp.RumahAqiqah.Data.RegisterRequest;
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+    <div class="col-md-12">
+        <h1 class="md-3">Register</h1>
+        @if(ViewBag.ErrorMessage != null && ViewBag.ErrorMessage != ""){
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+        <form role="form" asp-action="Register" method="Post">
+            <div class="form-group">
+                <label for="Username">
+                    Username
+                </label>
+                <input type="text" asp-for="Username" class="form-control" id="Username" placeholder="Masukan Username"/>
+            </div>
+            <div class="form-group">
+                <label for="Password">
+                    Password
+                </label>
+                <input type="password" class="form-control" asp-for="Password" id="Password" placeholder="Masukan Password" />
+            </div>
+            <div class="form-group">
+                <label for="Name">
+                    Nama
+                </label>
+                <input type="text" class="form-control" asp-for="Name" id="Name" name="Name" placeholder="Masukan Nama" />
+            </div>
+            <div class="form-group">
+                <label for="Email">
+                    Email
+                </label>
+                <input type="Email" class="form-control" asp-for="Email" id="Email" name="Email" placeholder="Example@gmail.com"/>
+            </div>
+             <div class="form-group">
+                <label for="PhoneNumber">
+                    Phone Number
+                </label>
+                <input type="text" class="form-control" asp-for="PhoneNumber" id="PhoneNumber" name="PhoneNumber" placeholder="Masukan No HandPhone"/>
+            </div>
+             <div class="form-group">
+                <label for="ReferalCode">
+                    Referal Code  
+                </label>
+                <input type="text" class="form-control" asp-for="ReferalCode" id="ReferalCode" name="ReferalCode" placeholder="Masukan Kode Referal Jika Ada"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="RoleId" class="control-label"></label>
+                <select asp-for="RoleId" class="form-control" asp-items="ViewBag.Roles"></select>
+            </div>
+            <div class="form-group">
+                <label for="PoB">
+                  Tempat Lahir 
+                </label>
+                <input type="text" class="form-control" asp-for="PoB" id="PoB" name="PoB" placeholder="Masukan Tempat Lahir"/>
+            </div>
+            <div class="form-group">
+                <label for="DoB">
+                    Tanggal Lahir  
+                </label>
+                <input type="Date" class="form-control" asp-for="DoB" id="DoB" name="DoB" placeholder="Masukan Tanggal Lahir"/>
+            </div>
+            <div class="form-group">
+                <label for="Address">
+                    Alamat  
+                </label>
+                <input type="text" class="form-control" asp-for="Address" id="Address" name="Address" placeholder="Masukan Alamat"/>
+            </div>
+            <div class="form-group">
+                <label for="IdentityNumber">
+                    Nomor Induk Keluarga 
+                </label>
+                <input type="text" class="form-control" asp-for="IdentityNumber" id="IdentityNumber" name="IdentityNumber" placeholder="Masukan NIK"/>
+            </div>
+            <div class="form-group">
+                <label for="RT">
+                    RT 
+                </label>
+                <input type="text" class="form-control" asp-for="RT" id="RT" name="RT" placeholder="Masukan RT"/>
+            </div>
+            <div class="form-group">
+                <label for="RW">
+                     RW  
+                </label>
+                <input type="text" class="form-control" asp-for="RW" id="RW" name="RW" placeholder="Masukan RW"/>
+            </div>
+            <div class="form-group">
+                <label for="District">
+                     Kecamatan  
+                </label>
+                <input type="text" class="form-control" asp-for="District" id="District" name="District" placeholder="Masukan Kecamatan"/>
+            </div>
+            <div class="form-group">
+                <label for="City">
+                     Kota/Kabupaten  
+                </label>
+                <input type="text" class="form-control" asp-for="City" id="City" name="City" placeholder="Masukan Kota/Kabupaten"/>
+            </div>
+             <button type="submit" class="btn btn-primary">
+                Submit
+            </button>
+        </form>
+    </div>

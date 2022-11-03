@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Update Article Page";
+}
+
+<section class="section">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Update Article</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <form action="" method="" enctype="multipart/form-data">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Title"><b>Title</b></label>
+                            <input type="text" class="form-control" id="Title" placeholder="Insert title">
+                        </div>
+                        <div class="form-group">
+                            <label for="Author"><b>Author</b></label>
+                            <input type="text" class="form-control" id="Author" placeholder="Insert author">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="Content" class="form-label"><b>Content</b></label>
+                            <textarea class="form-control" id="Content" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="PublishDate"><b>Publish Date</b></label>
+                            <input type="date" class="form-control" id="PublishDate" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="FileName"><b>Image</b></label>
+                            <input type="file" class="form-control" id="FileName">
+                        </div>
+                    </div>
+                </form>
+                <div class="">
+                    <a href="" type="submit" class="btn btn-primary">Send</a>
+                    <a href="/Article/Index" class="btn btn-warning">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

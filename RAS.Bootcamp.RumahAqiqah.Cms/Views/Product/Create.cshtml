@@ -1,0 +1,54 @@
+@model RAS.Bootcamp.RumahAqiqah.Data.Entities.Product;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="section">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Create Product</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <form asp-action="Create" method="Post" enctype="multipart/form-data">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Code"><b>Product Code</b></label>
+                            <input type="text" class="form-control" id="Code" asp-for="Code" placeholder="Insert Code">
+                        </div>
+                        <div class="form-group">
+                            <label for="Title"><b>Name</b></label>
+                            <input type="text" class="form-control" id="Title" asp-for="Title" placeholder="Insert Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="ImageFile"><b>Image</b></label>
+                            <input type="file" class="form-control" id="ImageFile" asp-for="ImageFile" placeholder="Insert Image">
+                        </div>
+                        <div class="form-group">
+                            <label for="Price"><b>Price</b></label>
+                            <input type="number" class="form-control" id="Price" asp-for="Price" placeholder="Enter Price">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="Description" class="form-label"><b>Description</b></label>
+                            <textarea class="form-control" id="Description" asp-for="Description" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="ServiceType"><b>ServiceType</b></label>
+                            <input type="text" class="form-control" id="ServiceType" asp-for="ServiceType" placeholder="Enter ServiceType" >
+                        </div>
+                        @* <div class="form-group">
+                            <label asp-for="ProductCategory" class="control-label"></label>
+                            <select asp-for="ProductCategory" class="form-control" asp-items="ViewBag.ProductCategories"></select>
+                        </div> *@
+                         <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Send" />
+                            <a href="/Product/Index" class="btn btn-warning">Cancel</a>
+                         </div>
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+</section>

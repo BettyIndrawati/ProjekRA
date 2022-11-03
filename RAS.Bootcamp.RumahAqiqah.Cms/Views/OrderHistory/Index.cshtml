@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Order History Page";
+}
+<!-- Striped rows start -->
+<section class="section">
+    <div class="row" id="table-striped">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Order History</h4>
+                    <a href="/OrderHistory/Create" class="btn btn-primary">Create Order History</a>
+                </div>
+                <div class="card-content">
+                    <!-- table striped -->
+                    <div class="table-responsive">
+                        <table class="table table-striped mb-0">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>ID</th>
+                                    <th>ORDER ID</th>
+                                    <th>TOTAL AMOUNT</th>
+                                    <th>STATUS</th>
+                                    <th>DESCRIPTION</th>
+                                    <th>ACTION DATE</th>
+                                    <th>ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-bold-500">Michael Right</td>
+                                    <td>$15/hr</td>
+                                    <td class="text-bold-500">UI/UX</td>
+                                    <td>Remote</td>
+                                    <td>Austin,Taxes</td>
+                                    <td>Austin,Taxes</td>
+                                    <td class="text-center">
+                                        <a href="/OrderHistory/Update" class="btn btn-primary">Update</a>
+                                        <a href="/OrderHistory/Detail" class="btn btn-warning">Detail</a>
+                                        <a href="/OrderHistory/Delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Striped rows end -->

@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Create Order Detail Page";
+}
+<!-- Striped rows start -->
+<section class="section">
+    <div class="row" id="table-striped">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Order Detail</h4>
+                    <a href="/OrderDetail/Create" class="btn btn-primary">Create Order Detail</a>
+                </div>
+                <div class="card-content">
+                    <!-- table striped -->
+                    <div class="table-responsive">
+                        <table class="table table-striped mb-0">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>ID</th>
+                                    <th>ORDER ID</th>
+                                    <th>TOTAL AMOUNT</th>
+                                    <th>PRODUCT ID</th>
+                                    <th>QTY</th>
+                                    <th>ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-bold-500">Michael Right</td>
+                                    <td>$15/hr</td>
+                                    <td class="text-bold-500">UI/UX</td>
+                                    <td>Remote</td>
+                                    <td>Austin,Taxes</td>
+                                    <td class="text-center">
+                                        <a href="/OrderDetail/Update" class="btn btn-primary">Update</a>
+                                        <a href="/OrderDetail/Detail" class="btn btn-warning">Detail</a>
+                                        <a href="/OrderDetail/Delete" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Striped rows end -->

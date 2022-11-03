@@ -1,0 +1,14 @@
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\bin\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.deps.json
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\bin\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.runtimeconfig.json
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\bin\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.dll
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\bin\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.pdb
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.AssemblyInfo.cs
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.dll
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\refint\RAS.Bootcamp.RumaAqiqah.Infrastructure.dll
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.pdb
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\RAS.Bootcamp.RumaAqiqah.Infrastructure.genruntimeconfig.cache
+C:\Users\mff02\repos\Bootcamp\Final-Project\rumah.aqiqah.salman\RAS.Bootcamp.RumaAqiqah.Infrastructure\obj\Debug\net6.0\ref\RAS.Bootcamp.RumaAqiqah.Infrastructure.dll

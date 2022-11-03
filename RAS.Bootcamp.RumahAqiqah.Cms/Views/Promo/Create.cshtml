@@ -1,0 +1,37 @@
+@model RAS.Bootcamp.RumahAqiqah.Data.RequestPromo
+@{
+    ViewData["Title"] = "Input Data Promo";
+}
+
+<h1 style="text-align:center;">@ViewData["Title"] </h1>
+
+<form action="Create" method = "post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="" class="form-label">Kode Promo</label>
+    <input class="form-control" id="kodepromo" asp-for="Code">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Awal Promo</label>
+    <input type="date" class="form-control" id="startdate" asp-for="StartDate">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Akhir Promo</label>
+    <input type="date" class="form-control" id="EndDate" asp-for="EndDate">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Banyak Kuota</label>
+    <input class="form-control" id="Quota" asp-for="Quota"> </input>
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Tipe Promo</label>
+    <select id="Tipe" class="form-control" asp-for="tipe">
+            <option value="0">Diskon Persen</option>
+            <option value="1">Diskon Fix</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Upload Banner Promo</label>
+    <input type="file" class="form-control" id="imgname" asp-for="Banner"> </input>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

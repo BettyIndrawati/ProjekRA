@@ -1,0 +1,79 @@
+@{
+    ViewData["Title"] = "Create Order Page";
+}
+<section class="section">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Create Order</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <form action="" method="" enctype="multipart/form-data">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="TransactionDate"><b>Transaction Date</b></label>
+                            <input type="date" class="form-control" id="TransactionDate"
+                                placeholder="Insert Transaction Date">
+                        </div>
+                        <div class="form-group">
+                            <label for="TotalAmount"><b>Total Amount</b></label>
+                            <input type="text" class="form-control" id="TotalAmount" placeholder="Insert Total Amount">
+                        </div>
+                        <div class="form-group">
+                            <label for="PromoCode"><b>Promo Code</b></label>
+                            <input type="text" class="form-control" id="PromoCode" placeholder="Enter Promo Code">
+                        </div>
+                        <div class="form-group">
+                            <label for="PromoValue"><b>Promo Value</b></label>
+                            <input type="text" class="form-control" id="PromoValue" placeholder="Enter Promo Value">
+                        </div>
+                        <div class="form-group">
+                            <label for="PaymentValue"><b>Payment Value</b></label>
+                            <input type="text" class="form-control" id="PaymentValue" placeholder="Enter Payment Value">
+                        </div>
+                        <div class="form-group">
+                            <label for="PaymentDate"><b>Payment Date</b></label>
+                            <input type="date" class="form-control" id="PaymentDate" placeholder="Enter Payment Date">
+                        </div>
+                        <div class="form-group">
+                            <label for="PaymentVerificationDate"><b>Payment Verification Date</b></label>
+                            <input type="date" class="form-control" id="PaymentVerificationDate"
+                                placeholder="Enter Payment Verification Date">
+                        </div>
+                        <div class="form-group">
+                            <label for="SenderBank"><b>Sender Bank</b></label>
+                            <input type="text" class="form-control" id="SenderBank" placeholder="Enter Sender Bank">
+                        </div>
+                        <div class="form-group">
+                            <label for="AccountBankNumber"><b>Account Bank Number</b></label>
+                            <input type="text" class="form-control" id="AccountBankNumber"
+                                placeholder="Enter Account Bank Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="OrderStatus"><b>Order Status</b></label>
+                            <input type="text" class="form-control" id="OrderStatus" placeholder="Enter Order Status">
+                        </div>
+                        <div class="form-group">
+                            <label for="PaymentStatus"><b>Payment Status</b></label>
+                            <input type="text" class="form-control" id="PaymentStatus"
+                                placeholder="Enter Payment Status">
+                        </div>
+                        <div class="form-group">
+                            <label for="TransferAccountNumber"><b>Transfer Account Number</b></label>
+                            <input type="text" class="form-control" id="TransferAccountNumber"
+                                placeholder="Enter Transfer Account Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="Bank"><b>Bank</b></label>
+                            <input type="text" class="form-control" id="Bank" placeholder="Enter Bank">
+                        </div>
+                    </div>
+                </form>
+                <div class="">
+                    <a href="" type="submit" class="btn btn-primary">Send</a>
+                    <a href="/Order/Index" class="btn btn-warning">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

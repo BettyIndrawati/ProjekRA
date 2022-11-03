@@ -1,0 +1,41 @@
+@model RAS.Bootcamp.RumahAqiqah.Data.Entities.User
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<section class="section">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Update User</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <form asp-action="Update">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"><b>Name</b></label>
+                            <input asp-for="Name" class="form-control" placeholder="Enter Name">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label"><b>Email</b></label>
+                            <input type="email" asp-for="Email" class="form-control" placeholder="example@gmail.com">
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PhoneNumber" class="control-label"><b>Phone Number</b></label>
+                            <input asp-for="PhoneNumber" class="form-control" placeholder="Enter Phone Number">
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send" class="btn btn-primary" />
+                            <a href="/User" class="btn btn-warning">Cancel</a>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</section>

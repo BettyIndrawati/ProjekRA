@@ -1,0 +1,44 @@
+@model RAS.Bootcamp.RumahAqiqah.Data.RequestPromo
+@{
+    ViewData["Title"] = "Input Data Promo";
+}
+
+<h1 style="text-align:center;">@ViewData["Title"] </h1>
+
+<form action="Update" method = "post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="" class="form-label">Kode Promo</label>
+    <input class="form-control" id="kodepromo" asp-for="Code" value="@Model.Code">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Awal Promo</label>
+    <input type="date" class="form-control" id="startdate" asp-for="StartDate" value="@Model.StartDate">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Akhir Promo</label>
+    <input type="date" class="form-control" id="EndDate" asp-for="EndDate" value="@Model.EndDate">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Banyak Kuota</label>
+    <input class="form-control" id="Quota" asp-for="Quota" value="@Model.Quota"> </input>
+  </div>
+  @if (@Model.tipe == 0)
+  {
+    <div class="mb-3">
+    <label for="" class="form-label">Besar Diskon</label>
+    <input class="form-control" id="value persen" asp-for="PercentageValue">
+  </div>
+  }
+  @if (@Model.tipe == 1)
+  {
+    <div class="mb-3">
+    <label for="" class="form-label">Besar Diskon</label>
+    <input class="form-control" id="value fix" asp-for="Value">
+  </div>
+  }
+  <div class="mb-3">
+    <label for="" class="form-label">Upload Banner Promo</label>
+    <input type="file" class="form-control" id="Banner" asp-for="Banner"> </input>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

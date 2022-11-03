@@ -1,0 +1,75 @@
+@model IEnumerable<RAS.Bootcamp.RumahAqiqah.Data.Entities.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- Striped rows start -->
+<section class="section">
+    <div class="row" id="table-striped">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">User Page</h4>
+                    <a href="/User/Create" class="btn btn-primary">Create User</a>
+                </div>
+                <div class="card-content">
+                    <!-- table striped -->
+                    <div class="table-responsive">
+                        <table class="table table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Name)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Email)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PhoneNumber)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ReferalCode)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Role)
+                                    </th>
+                                    <th>ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>                                    
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Email)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PhoneNumber)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ReferalCode)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Role.Name)
+                                    </td>
+                                    <td>
+                                        <a href="/User/Update/@item.Id" class="btn btn-primary">Update</a>
+                                        <a href="/User/Details/@item.Id" class="btn btn-warning">Details</a>
+                                        <a href="/User/Delete/@item.Id" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Striped rows end -->

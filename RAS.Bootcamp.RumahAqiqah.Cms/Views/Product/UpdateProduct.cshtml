@@ -1,0 +1,42 @@
+@model RAS.Bootcamp.RumahAqiqah.Data.Entities.Product;
+
+<section class="section">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Create Product</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <form action="UpdateProduct" method="Post" enctype="multipart/form-data">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Title"><b>Title</b></label>
+                            <input type="text" class="form-control" id="Title" placeholder="Insert Title" asp-for="Title" value="@Model.Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="ImageFile"><b>Image</b></label>
+                            <input type="file" class="form-control" id="ImageFile" placeholder="Insert Image" asp-for="ImageFile" value="@Model.Url">
+                        </div>
+                        <div class="form-group">
+                            <label for="Price"><b>Price</b></label>
+                            <input type="number" class="form-control" id="Price" placeholder="Enter Price" asp-for="Price" value="@Model.Price">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="Description" class="form-label"><b>Description</b></label>
+                            <textarea class="form-control" id="Description" rows="3" asp-for="Description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="ServiceType"><b>ServiceType</b></label>
+                            <input type="text" class="form-control" id="ServiceType" placeholder="Enter ServiceType" asp-for="ServiceType" value="@Model.ServiceType">
+                        </div>
+                         <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Update" />
+                            <a href="/Product/Index" class="btn btn-warning">Cancel</a>
+                         </div>
+                    </div>
+                    <input type="hidden" asp-for="Id"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
